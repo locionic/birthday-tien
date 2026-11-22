@@ -1,24 +1,24 @@
 {
-  "name": "birthday",
+  "name": "birthday-tien",
   "version": "1.0.0",
-  "description": "Birthday greetings..",
+  "description": "Happy Birthday Tien greetings",
   "main": " ",
   "scripts": {
     "server-node": "http-server -p 8081"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ayusharma/birthday.git"
+    "url": "git+https://github.com/locionic/birthday-tien.git"
   },
   "keywords": [
     "Birthday"
   ],
-  "author": "Ayush Sharma",
+  "author": "locionic",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/ayusharma/birthday/issues"
+    "url": "https://github.com/locionic/birthday-tien/issues"
   },
-  "homepage": "https://github.com/ayusharma/birthday#readme",
+  "homepage": "https://locionic.github.io/birthday-tien/",
   "dependencies": {
     "http-server": "^0.11.1"
   }

@@ -170,24 +170,21 @@ $('document').ready(function(){
 			$('.message').fadeIn('slow');
 		});
 		
-		var i;
+		var msgCount = $('.message p').length;
 
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
-			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
-				});
-				
-			}
-			else{
-				msgLoop(i);
-			}			
-
-		});
-			// body...
+				i=i+1;
+				$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+				if(i >= msgCount){
+					$("p:nth-child("+msgCount+")").delay(2000).fadeOut('slow').promise().done(function () {
+						$('.cake').fadeIn('fast');
+					});
+				}
+				else{
+					msgLoop(i);
+				}			
+			});
 		}
 		
 		msgLoop(0);
